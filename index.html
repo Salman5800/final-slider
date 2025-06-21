@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Taj Travels Garhwal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    .slider {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+    .slides {
+      display: flex;
+      width: 700vw;
+      animation: slide 28s infinite;
+    }
+    .slides img {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+    }
+    .center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3em;
+      font-weight: bold;
+      color: #ffffff;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      text-align: center;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0); }
+      14.2% { transform: translateX(0); }
+      28.5% { transform: translateX(-100vw); }
+      42.8% { transform: translateX(-200vw); }
+      57.1% { transform: translateX(-300vw); }
+      71.4% { transform: translateX(-400vw); }
+      85.7% { transform: translateX(-500vw); }
+      100% { transform: translateX(-600vw); }
+    }
+  </style>
+</head>
+<body>
+  <div class="slider">
+    <div class="slides">
+      <img src="tempo-traveller.png" alt="Slide">
+      <img src="haridwar.jpg" alt="Slide">
+      <img src="badrinath-temple.jpg" alt="Slide">
+      <img src="yamunotri-temple.jpg" alt="Slide">
+      <img src="mussoorie-town.jpg" alt="Slide">
+      <img src="hill-village.jpg" alt="Slide">
+      <img src="kedarnath-temple.jpg" alt="Slide">
+
+    </div>
+    <div class="center-text">Taj Travels Garhwal</div>
+  </div>
+</body>
+</html>
